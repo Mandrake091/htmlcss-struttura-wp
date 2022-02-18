@@ -1,0 +1,90 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+
+/* General */
+main{
+    background-color:blue;
+    line-height: 1.5em;
+    width: 85%;
+    margin: 30px auto 0;
+}
+.debug{
+    border: 3px solid black;
+}
+/*img{ /*il padding ridimensiona il contenuto e lascia la dimenzione attorno a se intatta
+    padding:0px;
+    /*il margine lascia il contenuto intatto e ridimenziona gli elementi attorno a se
+    margin: 30px;
+}*/
+header{
+    padding-top:100px;
+    margin:15px auto 30px;
+    width: 85%;
+    height: 20px;
+    background-color: violet;
+}
+.header-container{
+    margin-top: 20px;
+    margin-bottom:50px;
+    padding-bottom: 100px;
+    width:100%;
+    height: 400px;
+    background-color: rgb(223, 226, 21);
+}
+footer{
+    background-color: sienna;
+    margin:15px auto 0 0;
+    height: 60px;
+    padding-top:100px;
+    margin:15px auto 30px;
+    width: 85%;
+}
+
+.main-container{ 
+    margin:440px 0 0 0;
+    height: 60px;
+    width:100%;
+    background-color: rgb(159, 130, 238);
+}
+.section{
+    margin:15px 0 0 0;
+    height: 600px;
+    width: 20%;
+    background-color:tomato;
+    padding:20px;
+    overflow: hidden;
+}
+img{
+    width: 50%;
+}
+.article{
+    padding: 20px;
+    margin: 15px 0px;
+    height: 600px;
+    width: calc(60% - 15px);
+    background-color: rgb(12, 111, 128);
+
+}
+.aside{
+    text-align: justify;
+    padding: 20px;
+    margin: 15px 15px 0 0;
+    height: 600px;
+    width: calc(20% - 15px);
+    background-color: tan;
+}
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}

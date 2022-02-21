@@ -12,31 +12,37 @@
 }
 
 /* General */
-main{
-    line-height: 1.3em;
-    width: 900px;
-    height: 600px;
-    margin:30px auto;
+.left{
+    float: left;
 }
-a{  
-    text-transform: uppercase;
-    padding-right: 10px;
-    text-decoration: none;
-    color: black;
+.right{
+    float:right;
 }
+/* Text Style */
 span{
-   
     font-weight: 300;
     padding-right: 5px;
 }
-.debug{
-    border: 3px solid black;
+span>a{
+    color:grey;
+    text-transform: uppercase;
+    padding-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 30px;
+    font-weight: 300;
 }
-/*img{ /*il padding ridimensiona il contenuto e lascia la dimenzione attorno a se intatta
-    padding:0px;
-    /*il margine lascia il contenuto intatto e ridimenziona gli elementi attorno a se
-    margin: 30px;
-}*/
+h4{
+    padding-top: 10px;
+    color:grey;
+    font-weight: 300;
+}
+h1{
+    font-size: 35px;
+}
+/* / Text Style */
+
+/* Header */
 header{
     margin: 0 auto 15px;
     width: 900px;
@@ -47,6 +53,132 @@ header{
     width:100%;
     height: 100px;
 }
+.header-banner{
+    position: absolute;
+    width: 900px;
+    border-radius: 10px;
+    background-position:0;
+    margin:15px auto;
+    background-size: cover;
+    height: 380px;
+    background-image:
+    url(../img/banner.jpg);
+    filter: brightness(80%) drop-shadow(0px 0px 2px gray);
+}
+.header-container>img{
+    padding-right: 30px;
+    border-right: 1px solid #d7d7d7;
+    height: 60px;
+}
+.text-banner{
+    font-weight: 300;
+    position: relative;
+    top: 250px;
+    left: 30px;
+    color:white;
+}
+.text-banner>p{
+    font-size: 12px;
+    padding-right: 480px;
+}
+/* / Header */
+
+/* Main */
+main{
+    line-height: 1.3em;
+    width: 900px;
+    height: 600px;
+    margin:30px auto;
+}
+.text-area{
+    padding-top: 5px;
+    line-height: 1.2;
+    color: grey;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 300;
+}
+.main-container{
+    height: 80px;
+    width:100%;
+}
+
+/* Right Column */
+section>img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    object-fit: cover;
+     filter:brightness(80%) drop-shadow(0px 0px 2px gray);
+}
+.section{
+    margin:15px 0 0 0;
+    height: 150px;
+    width: calc(20% - 15px);
+    border-radius: 10px;
+    background-color: aqua;
+    object-fit: contain;
+    background-size: contain;
+}
+.section-text{
+    overflow: hidden;
+    margin: 15px 0 0 0;
+    height: 320px;
+    width: calc(20% - 15px);
+}
+/* / Right Column */
+
+/* Central Column */
+.article{
+    filter:brightness(80%) drop-shadow(0px 0px 2px gray);
+    border-radius: 10px;
+    margin: 15px 0 0 0;
+    height: 150px;
+    width:60%;
+    background-color: rgb(12, 111, 128);
+}
+article>img{
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+.article-text{
+    overflow: hidden;
+    margin:15px 0 0 0;
+    height: 320px;
+    width:60%;
+}
+.article-title{
+    font-weight: 400;
+    color: black;
+}
+/* / Central Column */
+
+/* Left Column */
+.aside{
+    overflow: hidden;
+    filter:brightness(80%) drop-shadow(0px 0px 2px gray);
+    border-radius: 10px;
+    margin: 15px 15px 0 0;
+    height: 150px;
+    width: calc(20% - 15px);
+    background-color: tan;
+}
+aside>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.aside-text{
+    overflow: hidden;
+    margin: 15px 15px 0 0;
+    height: 320px;
+    width: calc(20% - 15px);
+
+}
+/* / Left Column */
+
+/* Footer */
 footer{
     font-weight: 300;
     line-height:2;
@@ -58,137 +190,6 @@ footer{
 footer>p>span{
     color:red;
 }
-h1{
-    font-size: 35px;
-}
-h2{
-    font-weight: 300;
-    position: relative;
-    top: 250px;
-    left: 30px;
-    color:white;
-}
-h2>p{
-    font-size: 12px;
-    padding-right: 480px;
-}
-span>a{
-    display: inline-block;
-    padding-top: 30px;
-    color:grey;
-    font-weight: 300;
-}
-h4{
-    padding-top: 10px;
-    color:grey;
-    font-weight: 300;
-}
-.article-title{
-    font-weight: 400;
-    color: black;
-    
-}
-.text-area{
-    padding-top: 5px;
-    line-height: 1.2;
-    color: grey;
-    text-align: left;
-    padding-right: 10px;
-    font-size: 13px;
-    font-weight: 300;
-}
+/* / Footer */
 
-.main-container{
-    height: 80px;
-    width:100%;
-}
-.section{
-    overflow: hidden;
-    margin:15px 0 0 0;
-    height: 150px;
-    width: calc(20% - 15px);
-    border-radius: 10px;
-    filter:brightness(80%) drop-shadow(0px 0px 2px gray);
-    background-color: aqua;
-    object-fit: contain;
-    background-size: contain;
-
-}
-.aside-text{
-    overflow: hidden;
-    margin: 15px 15px 0 0;
-    height: 320px;
-    width: calc(20% - 15px);
-   
-}
-.article-text{
-    overflow: hidden;
-    margin:15px 0 0 0;
-    height: 320px;
-    width:60%;
-}
-.section-text{
-    overflow: hidden;
-    margin: 15px 0 0 0;
-    height: 320px;
-    width: calc(20% - 15px);
-   
-}
-section>img{
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    object-fit: cover;
-}
-#logo{
-    height: 60px;
-}
-.header-banner{
-    position: absolute;
-    width: 900px;
-    border-radius: 10px;
-    background-position:0; 
-    margin:15px auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 380px;
-    background-image: 
-    url(../img/banner.jpg);
-    filter: brightness(85%);
-}
-article>img{
-    height: 150px;
-    object-fit: cover;
-    filter:brightness(85%) drop-shadow(0px 0px 2px gray);
-    width: 100%;
-}
-aside>img{
-    filter:brightness(85%) drop-shadow(0px 0px 2px gray);
-    width: 100%;
-    border-radius: 10px;
-}
-.aside{
-    overflow: hidden;
-    filter:brightness(85%) drop-shadow(0px 0px 2px gray);
-    border-radius: 10px;
-    margin: 15px 15px 0 0;
-    height: 150px;
-    width: calc(20% - 15px);
-    background-color: tan;
-}
-.article{ 
-    overflow: hidden;
-    filter:brightness(85%) drop-shadow(0px 0px 2px gray);
-    border-radius: 10px;
-    margin: 15px 0 0 0;
-    height: 150px;
-    width:60%;
-    background-color: rgb(12, 111, 128);
-}
-
-.left{
-    float: left;
-}
-.right{
-    float:right;
-}
+/* / Main */
